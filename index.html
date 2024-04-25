@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Doctor Consultations form</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+<header>
+  <div class="container"> 
+    <div class="header-section">
+      <h2 class="logo">Logo</h2>
+      <div class="navigation-item">
+        <nav class="same-color">
+          <a href="#" class="same-color">home</a>
+          <a href="#" class="same-color">about</a>
+          <a href="#"class="same-color">contact</a>
+        </nav>
+      </div>
+      
+      <button class="same-btn">Call me</button>
+    </div>
+    
+  </div>
+</header>
+<!-- main sectoin -->
+    <main class="container">
+     <section id="contact">
+
+        <div class=" left">
+  <img src="doctor.jog.jpg" alt="pic">
+  <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laudantium, voluptas quae, odit <br>praesentium ducimus, tempore hic nulla culpa aut esse quia facilis <br> recusandae? Provident beatae mollitia dicta omnis itaque fugiat, tempore temporibus ab pariatur <br> quas. Ducimus error odio, aliquam corporis, expedita fugiat aut nobis possimus, esse voluptatibus molestias sint sapiente.</p>
+        </div>
+        
+       <div class="right"> 
+<div class="form-head">
+<h2>Talk to me with your problem</h2>
+</div>
+        <form action="https://formspree.io/f/mvoewzqk"
+        method="POST">
+  <div class="content">
+    <div>
+      <label for="fname">First Name</label>
+      <input type="text" id="fname" name="fname" placeholder="Your First Name" required>
+    </div>
+    <div>
+      <label for="lname">Last Name</label>
+      <input type="text" id="lname" name="lname" placeholder="Your Last Name" required>
+    </div>
+  </div>
+
+  <div class="content">
+    <div>
+      <label for="mail">Email</label>
+      <input type="email" id="mail" name="mail" placeholder="Your email" required>
+    </div>
+    <div>
+      <label for="pass">password</label>
+      <input type="password" id="pass" name="pass" placeholder="Your password" required>
+    </div>
+  </div>
+
+  <div class="content">
+    <div> 
+<label for="phn">Phone Number</label>
+<input type="number" name="phn" id="phn" placeholder="your number" required>
+    </div>
+    <div>
+    <label for="problem">Your Problem</label>  
+    <input list="problem" name="problem" id="Problem" required>
+    <datalist id="problem">
+      <option value="fever" >
+      <option value="sneeze">
+      <option value="cough" >
+      <option value="headache">
+      <option value="vomiting">
+  </datalist>
+    </div>
+  </div>
+  <div class="content-end">
+<label for="msg">What your opinion</label>
+<textarea name="msg" id="msg" cols="70" rows="10"></textarea>
+  </div>
+  <div class="btn-level">
+    <input type="submit" value="submit">
+    <input type="reset" value="reset">
+</div>
+</div> 
+</form>
+     </section>
+    </main>
+    <!-- footer section -->
+    <footer class="foot">
+      <h2>Mostafez Maruf</h2>
+      <p>Feni sadar Hospital,Feni</p>
+    </footer>
+  </body>
+</html>
